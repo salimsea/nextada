@@ -1,6 +1,10 @@
 import React from "react";
+import SectionContact from "./parts/SectionContact";
 import SectionHero from "./parts/SectionHero";
-import SectionShape from "./parts/SectionShape";
+import SectionProfile from "./parts/SectionProfile";
+import SectionProjects from "./parts/SectionProjects";
+import SectionSkills from "./parts/SectionSkills";
+import Footer from "components/atoms/Footer";
 
 const ComponentHome = () => {
   return (
@@ -8,47 +12,20 @@ const ComponentHome = () => {
       {/* section hero */}
       <SectionHero />
 
-      <section className="py-24">
-        <div className="container mx-auto">
-          <h2 className="text-2xl font-semibold font-mono text-center">
-            Profile
-          </h2>
+      {/* section profile */}
+      <SectionProfile />
 
-          <p className="text-lg mt-2 text-gray-500 text-center">
-            About me profile, read my bio here
-          </p>
-          <div className="w-2/12 mx-auto">
-            <div className="bg-gradient-to-r from-[#eb01a5] to-[#d13531] rounded-full w-100 h-1"></div>
-          </div>
-          <div className="flex w-9/12 mx-auto mt-12 items-center">
-            <div className="w-5/12 p-10">
-              <img
-                src="https://salimseal.com/_ipx/w_128,q_75/%2F_next%2Fstatic%2Fmedia%2Fuser.b5ff3a88.png?url=%2F_next%2Fstatic%2Fmedia%2Fuser.b5ff3a88.png&w=128&q=75"
-                className="w-60 mt-3"
-              />
-              <div className="bg-gradient-to-r from-[#eb01a5] to-[#d13531] rounded-full p-2 w-28 h-28 -mt-24"></div>
-            </div>
-            <div className="w-8/12 px-10">
-              <p className="text-lg leading-relaxed text-justify">
-                Fullstack Developer - I’am a front-end designer & back-end
-                developer From Indonesia 🇮🇩
-              </p>
-              <p className="text-lg leading-relaxed text-justify">
-                Hai, my name Salim Segaf Alqosam, I am from Indonesia and a
-                software engineer, I have experience in making mobile
-                applications and websites, I can solve problems in difficulty,
-                have a willingness to learn new technology, and can work with a
-                team.
-              </p>
+      {/* section skills */}
+      <SectionSkills />
 
-              <p className="text-lg mt-6 leading-relaxed text-justify text-transparent bg-clip-text bg-gradient-to-r from-[#eb01a5] to-[#d13531]">
-                Techstack i like to use html, css, javascript, reactjs, react
-                native, csharp, php, postgresql, mysql.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* section project */}
+      <SectionProjects />
+
+      {/* section contact */}
+      <SectionContact />
+
+      {/* section footer */}
+      <Footer />
     </>
   );
 };

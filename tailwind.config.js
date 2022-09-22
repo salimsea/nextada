@@ -12,6 +12,11 @@ module.exports = {
         mono: ["IBM Plex Mono", "ui-monospace"],
       },
       colors: {
+        customgray: {
+          DEFAULT: "#F7F7FB",
+          200: "#E8E8FB",
+          300: "#BFBFE3",
+        },
         yellow: {
           50: "#FFFCE1",
           100: "#FEF9CD",
@@ -32,12 +37,14 @@ module.exports = {
     plugin(function ({ addUtilities }) {
       const utilities = {
         ".bg-hero": {
-          // "background-color": "red",
           background: "#eb01a5",
           "background-image":
             "url('https://salimseal.com/_next/static/media/img-bglayer.e95ef302.png')",
           "background-image":
             "url('https://salimseal.com/_next/static/media/img-bglayer.e95ef302.png'), linear-gradient(#eb01a5, #d13531);",
+        },
+        ".shadow-skill": {
+          "box-shadow": "0px 15px 30px rgba(0, 0, 0, 0.1)",
         },
       };
 
