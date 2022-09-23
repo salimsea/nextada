@@ -42,6 +42,8 @@ module.exports = {
             "url('https://salimseal.com/_next/static/media/img-bglayer.e95ef302.png')",
           "background-image":
             "url('https://salimseal.com/_next/static/media/img-bglayer.e95ef302.png'), linear-gradient(#eb01a5, #d13531);",
+          "background-size": "cover",
+          "background-repeat": "no-repeat",
         },
         ".shadow-skill": {
           "box-shadow": "0px 15px 30px rgba(0, 0, 0, 0.1)",

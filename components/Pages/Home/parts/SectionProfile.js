@@ -1,23 +1,27 @@
-import { SectionDescription, SectionTitle } from "components/atoms";
+import { Container, SectionDescription, SectionTitle } from "components/atoms";
 import React from "react";
 
 const SectionProfile = () => {
   return (
     <section className="py-24">
-      <div className="container mx-auto">
+      <Container>
         <SectionTitle>Profile</SectionTitle>
         <SectionDescription>
           About me profile, read my bio here
         </SectionDescription>
-        <div className="flex w-9/12 mx-auto mt-12 items-center">
-          <div className="w-5/12 p-10">
-            <img
-              src="https://salimseal.com/_ipx/w_128,q_75/%2F_next%2Fstatic%2Fmedia%2Fuser.b5ff3a88.png?url=%2F_next%2Fstatic%2Fmedia%2Fuser.b5ff3a88.png&w=128&q=75"
-              className="w-60 mt-3"
-            />
-            <div className="bg-gradient-to-r from-[#eb01a5] to-[#d13531] rounded-full p-2 w-28 h-28 -mt-24"></div>
+
+        <div className="flex lg:items-center md:items-start flex-wrap xl:w-9/12 mx-auto mt-10">
+          <div className="md:w-5/12 w-full px-10 mb-10 md:mb-0 flex justify-center">
+            <div>
+              <img
+                src="https://salimseal.com/_ipx/w_128,q_75/%2F_next%2Fstatic%2Fmedia%2Fuser.b5ff3a88.png?url=%2F_next%2Fstatic%2Fmedia%2Fuser.b5ff3a88.png&w=128&q=75"
+                className="md:w-60 w-70 mt-3"
+              />
+              <div className="bg-gradient-to-r from-[#eb01a5] to-[#d13531] rounded-full p-2 md:w-28 md:h-28 w-10 h-10 md:-mt-24 -mt-8"></div>
+            </div>
           </div>
-          <div className="w-8/12 px-10">
+
+          <div className="md:w-7/12 w-full px-10">
             <p className="text-lg leading-relaxed text-justify">
               Fullstack Developer - I’am a front-end designer & back-end
               developer From Indonesia 🇮🇩
@@ -35,7 +39,7 @@ const SectionProfile = () => {
             </p>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 };

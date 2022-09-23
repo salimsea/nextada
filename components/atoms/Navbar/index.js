@@ -9,12 +9,13 @@ const Navbar = () => {
       <div className="w-3/12">
         <Logo />
       </div>
-      <div className="w-6/12">
+      <div className="w-6/12 hidden md:block">
         <Nav />
       </div>
-      <div className="w-3/12 text-right">
+      <div className="w-3/12 text-right hidden md:block">
         <Button variant="outline-yellow">Contact</Button>
       </div>
+      <div className="w-9/12 block md:hidden text-right py-12">hai</div>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import NavItem from "../NavItem";
 
 const Nav = () => {
   return (
-    <ul className="flex justify-center space-x-10 py-20">
+    <ul className="flex justify-center space-x-10 py-14">
       <NavItem>Profile</NavItem>
       <NavItem>Skills</NavItem>
       <NavItem>Projects</NavItem>

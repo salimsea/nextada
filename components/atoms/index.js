@@ -6,6 +6,7 @@ import Button from "./Button";
 import SectionDescription from "./SectionDescription";
 import SectionTitle from "./SectionTitle";
 import Field from "./Field";
+import Container from "./Container";
 
 export {
   NavItem,
@@ -16,4 +17,5 @@ export {
   SectionDescription,
   SectionTitle,
   Field,
+  Container,
 };

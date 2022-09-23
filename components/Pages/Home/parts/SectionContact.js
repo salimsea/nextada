@@ -9,10 +9,10 @@ import ItemContact from "./components/ItemContact";
 
 const SectionContact = () => {
   return (
-    <section className="container mx-auto mb-5">
-      <div className="bg-customgray flex rounded-lg">
-        <div className="w-6/12 border-r border-customgray-200">
-          <div className="py-16 px-20">
+    <section className="container mx-auto mb-5 px-10 2xl:px-0">
+      <div className="bg-customgray flex rounded-lg flex-wrap">
+        <div className="md:w-6/12 w-full md:border-r border-b border-customgray-200">
+          <div className="lg:py-16 lg:px-20 md:p-14 p-10">
             <SectionTitle left>Contact</SectionTitle>
             <SectionDescription left>
               Call to hire me, open parttime job worker
@@ -37,13 +37,13 @@ const SectionContact = () => {
             />
           </div>
         </div>
-        <div className="w-6/12">
-          <form className="py-16 px-20">
-            <div className="flex -mx-4">
-              <div className="w-6/12 px-4">
+        <div className="md:w-6/12 w-full">
+          <form className="lg:py-16 lg:px-20 md:p-14 p-10">
+            <div className="flex flex-wrap -mx-4">
+              <div className="lg:w-6/12 w-full px-4">
                 <Field label="Name" name="Name" type="text" />
               </div>
-              <div className="w-6/12 px-4">
+              <div className="lg:w-6/12 w-full px-4">
                 <Field label="E-mail" name="Email" type="email" />
               </div>
             </div>
