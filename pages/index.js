@@ -1,5 +1,5 @@
-import { Layout } from "../components";
-import ComponentHome from "../components/pages/Home";
+import { Layout } from "components";
+import ComponentHome from "components/Pages/Home";
 
 export default function Home() {
   return (
