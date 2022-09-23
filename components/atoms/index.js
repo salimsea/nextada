@@ -7,6 +7,7 @@ import SectionDescription from "./SectionDescription";
 import SectionTitle from "./SectionTitle";
 import Field from "./Field";
 import Container from "./Container";
+import Drawer from "./Drawer";
 
 export {
   NavItem,
@@ -18,4 +19,5 @@ export {
   SectionTitle,
   Field,
   Container,
+  Drawer,
 };

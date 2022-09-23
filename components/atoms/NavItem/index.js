@@ -1,13 +1,21 @@
-import React from "react";
+import classnames from "classnames";
 
-const NavItem = ({ children }) => {
+export default function NavItem({ href, scheme, children }) {
+  const schemes = {
+    light: "text-white text-opacity-60 hover:text-opacity-100",
+    dark: "text-black",
+  };
+
+  const pickedScheme = schemes[scheme];
+
   return (
-    <li>
-      <a className="text-white text-lg text-opacity-60 font-semibold">
+    <li className="cursor-pointer">
+      <a
+        href={href}
+        className={classnames("text-lg transition font-semibold", pickedScheme)}
+      >
         {children}
       </a>
     </li>
   );
-};
-
-export default NavItem;
+}

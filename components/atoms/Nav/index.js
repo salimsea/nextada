@@ -1,13 +1,20 @@
+import classNames from "classnames";
 import React from "react";
 import NavItem from "../NavItem";
 
-const Nav = () => {
+const Nav = ({ dir, scheme }) => {
+  const dirs = {
+    horizontal: "justify-center space-x-10",
+    vertical: "flex-col space-y-6",
+  };
+
+  const pickedDir = dirs[dir];
   return (
-    <ul className="flex justify-center space-x-10 py-14">
-      <NavItem>Profile</NavItem>
-      <NavItem>Skills</NavItem>
-      <NavItem>Projects</NavItem>
-      <NavItem>Contact</NavItem>
+    <ul className={classNames("flex", pickedDir)}>
+      <NavItem scheme={scheme}>Profile</NavItem>
+      <NavItem scheme={scheme}>Skills</NavItem>
+      <NavItem scheme={scheme}>Projects</NavItem>
+      <NavItem scheme={scheme}>Contact</NavItem>
     </ul>
   );
 };

@@ -1,5 +1,4 @@
-import { Button, Navbar, Container } from "components/atoms";
-import React from "react";
+import { Button, Navbar, Container, Drawer } from "components/atoms";
 import SectionShape from "./SectionShape";
 
 const SectionHero = () => {
@@ -8,7 +7,7 @@ const SectionHero = () => {
       <div className="bg-hero">
         <Container>
           {/* section header */}
-          <Navbar />
+          <Navbar onclick={() => setOffcanvas(!offcanvas)} />
           {/* section hero */}
           <div className="text-center my-20">
             <h1 className="text-3xl text-white font-semibold font-mono 2xl:w-8/12 md:w-11/12 w-12/12 mx-auto">
